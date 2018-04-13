@@ -4,12 +4,14 @@
 
 ```
 docker run -d \
+  --name=socks5-proxy \
   -p 1080:1080 \
   -v ${PWD}/passwd:/etc/passwd \
+  --restart=always \
   kulikov/socks5-proxy
 ```
 
-passwd example:
+passwd file example:
 ```
 login:pass
 user1:pass1
