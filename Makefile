@@ -6,3 +6,6 @@ release:
 	docker build -t ${TAG}:latest -t ${TAG}:${VERSION} .
 	docker push ${TAG}:${VERSION}
 	docker push ${TAG}:latest
+
+run:
+	docker run --rm -p 1080:1080 -v ${PWD}/passwd:/etc/passwd ${TAG}
