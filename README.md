@@ -4,7 +4,7 @@
 docker run -d \
   -p 1080:1080 \
   -v ${PWD}/passwd:/etc/passwd \
-  kulikov/socks5-docker
+  kulikov/socks5-proxy
 ```
 
 passwd example:
